@@ -227,8 +227,6 @@ public class BackgroundGeolocationFacade {
     public void start() {
         logger.debug("Starting service");
 
-        PERMISSIONS
-
         PermissionManager permissionManager = PermissionManager.getInstance(getContext());
         permissionManager.checkPermissions(Arrays.asList(PERMISSIONS), new PermissionManager.PermissionRequestListener() {
             @Override
